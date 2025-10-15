@@ -13,6 +13,7 @@ Analysis of xenobiotic compounds, fluorinated substances, and bioactive molecule
 
 - `database_matching.ipynb` - Matching to DrugBank, FCCdb, PubChem, Supernatural, Lotus and Coconut
 - `natural_product_matching.ipynb` - Matching to Natural product databases: Supernatural, Lotus and Coconut
+- `non_natural_formulas.ipynb` - Finding formulas that do not match to any of the natural product databases in the project.
 - `ptfi_analysis.ipynb` 
 
 ## Data
