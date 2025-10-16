@@ -8,35 +8,55 @@ Integrative analysis of the PTFI dataset, linking ~24,000 molecular features acr
 
 Analysis of xenobiotic compounds, fluorinated substances, and bioactive molecules in food using untargeted LC-MS metabolomics data from the Periodic Table of Food Initiative and external chemical databases.
 
-
 ## Notebooks
 
-- `database_matching.ipynb` - Matching to DrugBank, FCCdb, PubChem, Supernatural, Lotus and Coconut
-- `natural_product_matching.ipynb` - Matching to Natural product databases: Supernatural, Lotus and Coconut
-- `non_natural_formulas.ipynb` - Finding formulas that do not match to any of the natural product databases in the project.
-- `ptfi_analysis.ipynb` 
+Analysis workflow (executed in PTFI environment):
+
+1. **`ptfi_data_prep.html`** - Data processing and transformation to long format
+2. **`ptfi_external_db_matches.html`** - External database matching and visualization (DrugBank, FCCdb, Agrochemical PubChem)
+3. **`ptfi_therapeutic_categories.html`** - DrugBank therapeutic categories analysis
+4. **`ptfi_f_analysis.html`** - Fluorinated xenobiotics analysis
+5. **`ptfi_producers.html`** - Putative Novel producer discoveries
 
 ## Data
 
-PTFI dataset: 500 foods, 24,721 features (900 annotated, 23,821 formula-only)
+**PTFI dataset**: 500 foods, 24,721 features (900 annotated, 23,821 formula-only)
 
 **Access**: https://pmp.heart.org/ (PTFI online platform)
 
-**Note**: Raw data not included in this repository.
+**Note**: Raw PTFI data is only accessible through the PTFI platform and is not included in this repository.
+
+## Database requirements
+
+This analysis requires external chemical databases (not included):
+
+- **LOTUS**: [lotus.naturalproducts.net](https://lotus.naturalproducts.net/)
+- **COCONUT**: [coconut.naturalproducts.net](https://coconut.naturalproducts.net/download)
+- **DrugBank**: [drugbank.ca](https://www.drugbank.ca/) (requires registration)
+- **SuperNatural 3**: Natural products database
+- **PubChem**: Agrochemicals subset
 
 ## Requirements
 
-Python 3.12 with: pandas (2.2.3), numpy, matplotlib (3.9.3), seaborn (0.13.2), scikit-learn (1.7.0), scipy, jupyter
+Python 3.12 with:
+```
+pandas==2.2.3
+numpy
+matplotlib==3.9.3
+seaborn==0.13.2
+scipy
+pymongo
+lxml
+jupyter
+```
 
-## Data requirements
 
-This analysis requires the following databases (not included in this repository):
+## Key findings
 
-- **LOTUS**: Download from [lotus.naturalproducts.net](https://lotus.naturalproducts.net/)
-- **COCONUT**: Download from [coconut.naturalproducts.net](https://coconut.naturalproducts.net/download)
-- **DrugBank**: Requires registration at [drugbank.ca](https://www.drugbank.ca/)
-
-Place downloaded files in the `databases/` directory.
+- Distinct xenobiotic fingerprints across food categories
+- Widespread presence of fluorinated compounds in dairy products  
+- Dietary transfer of pharmaceutical compounds and phytoestrogens
+- Novel producer discoveries for bioactive natural products
 
 ## Citation
 ```
