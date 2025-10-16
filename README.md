@@ -10,6 +10,10 @@ Analysis of xenobiotic compounds, fluorinated substances, and bioactive molecule
 
 ## Notebooks
 
+- **`database_matching.ipynb`** - Matching PTFI features to external databases (DrugBank, FCCdb, PubChem)
+- **`natural_product_matching.ipynb`** - Matching to natural product databases (LOTUS, COCONUT, SuperNatural 3)
+- **`non_natural_formulas.ipynb`** - Identifying non-natural product formulas
+
 Analysis workflow (executed in PTFI environment):
 
 1. **`ptfi_data_prep.html`** - Data processing and transformation to long format
@@ -53,10 +57,10 @@ jupyter
 
 ## Key findings
 
-- Distinct xenobiotic fingerprints across food categories
-- Widespread presence of fluorinated compounds in dairy products  
-- Dietary transfer of pharmaceutical compounds and phytoestrogens
-- Novel producer discoveries for bioactive natural products
+- Contextualization of the PTFI dataset through external dataset matching
+- Distinct xenobiotic fingerprints across food categories  
+- Dietary transfer of bioactive compounds
+- Putative novel producer discoveries for bioactive natural products
 
 ## Citation
 ```
