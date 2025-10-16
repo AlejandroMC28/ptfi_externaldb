@@ -1,4 +1,4 @@
-# Mapping the Origins of Molecular Signals in Food
+# Mapping the origins of molecular signals in food by integrative analysis of untargeted metabolomics with chemical databases
 
 **Alejandro Mendoza Cantu, Julia M. Gauglitz, Wout Bittremieux**
 
@@ -27,6 +27,16 @@ PTFI dataset: 500 foods, 24,721 features (900 annotated, 23,821 formula-only)
 ## Requirements
 
 Python 3.12 with: pandas (2.2.3), numpy, matplotlib (3.9.3), seaborn (0.13.2), scikit-learn (1.7.0), scipy, jupyter
+
+## Data requirements
+
+This analysis requires the following databases (not included in this repository):
+
+- **LOTUS**: Download from [lotus.naturalproducts.net](https://lotus.naturalproducts.net/)
+- **COCONUT**: Download from [coconut.naturalproducts.net](https://coconut.naturalproducts.net/download)
+- **DrugBank**: Requires registration at [drugbank.ca](https://www.drugbank.ca/)
+
+Place downloaded files in the `databases/` directory.
 
 ## Citation
 ```
