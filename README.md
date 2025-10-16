@@ -6,7 +6,7 @@ Integrative analysis of the PTFI dataset, linking ~24,000 molecular features acr
 
 ## Overview
 
-Analysis of xenobiotic compounds, fluorinated substances, and bioactive molecules in food using untargeted LC-MS metabolomics data from the Periodic Table of Food Initiative and external chemical databases.
+Analysis of the first 500 foods from the Periodic Table of Food Initiative discovery database using external chemical databases to contextualize the findings.
 
 ## Notebooks
 
